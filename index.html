@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0e5c36" />
+  <meta name="description" content="Solarshop — premium solar, battery storage and EV charging solutions for homes and businesses." />
+  <title>Solarshop — Solar solutions for a brighter tomorrow</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C12 4 5.5 7.3 5.5 13.2c0 3.2 2.5 5.3 5.5 5.3 5.4 0 8.4-6.2 9-14.5Z"/><path d="M4 20c2.2-4.5 5.7-7.8 11-10"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></symbol>
+    <symbol id="i-house" viewBox="0 0 24 24"><path d="m3 11 9-7 9 7"/><path d="M5 10v10h14V10M9 20v-6h6v6"/></symbol>
+    <symbol id="i-battery" viewBox="0 0 24 24"><rect x="6" y="5" width="12" height="16" rx="2"/><path d="M9 5V3h6v2M10 10h4M12 8v4"/></symbol>
+    <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V7h10v14M14 11h6v10M8 11h2M8 15h2M8 19h2M17 15h1M17 18h1"/></symbol>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="M5 17h14l-1.4-5.2A2 2 0 0 0 15.7 10H8.3a2 2 0 0 0-1.9 1.4L5 17Z"/><path d="M4 17v2h2M20 17v2h-2M8 17v2M16 17v2M9 13h6"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M5 18 3 21v-6a8 8 0 1 1 3 3Z"/><path d="M8 10h8M8 14h5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6Z"/><path d="M14 3v5h5M9 12h6M9 16h6"/></symbol>
+    <symbol id="i-tools" viewBox="0 0 24 24"><path d="m14 6 4-4 4 4-4 4"/><path d="m18 6-8 8M6 12l6 6-4 4-6-6Z"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 5 14h6l-1 8 9-13h-6Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 4 6v6c0 5 3.4 8 8 9 4.6-1 8-4 8-9V6Z"/><path d="m8.5 12 2.3 2.3 4.7-5"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16.5" cy="9" r="2.5"/><path d="M2 20c0-4 2.5-7 6-7s6 3 6 7M14 14c3.5 0 6 2.2 6 6"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V9M10 20V4M16 20v-7M22 20H2"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3 9 7l-2 2c1.6 3.1 3.9 5.4 7 7l2-2 4 2.5C19.5 19.3 17.7 21 15 21 8.4 21 3 15.6 3 9c0-2.7 1.7-4.5 3.5-6Z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M14 7l5 5-5 5"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.2l-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"/></symbol>
+    <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.5 2 2 3.5 4 4l1.2-1.1c.3-.3.7-.3 1-.1l1.5.8c.4.2.5.7.3 1.1-.6 1.2-1.8 1.8-3 1.6-4.2-.7-7.2-3.7-7.9-7.9-.2-1.2.4-2.4 1.6-3 .4-.2.9-.1 1.1.3l.8 1.5c.2.3.2.7-.1 1Z"/></symbol>
+    <symbol id="i-facebook" viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v5h4v-5h3l1-4h-4V9c0-.7.3-1 1-1Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M6 9v11M6 5.5v.5M10 20v-7c0-2 1-4 3.5-4S18 10.8 18 14v6M10 12c1-2 2-3 4-3"/></symbol>
+    <symbol id="i-youtube" viewBox="0 0 24 24"><path d="M21 8.5c-.2-1.3-1.2-2.3-2.5-2.5C16.6 5.7 14.5 5.5 12 5.5S7.4 5.7 5.5 6A3 3 0 0 0 3 8.5 20 20 0 0 0 2.7 12 20 20 0 0 0 3 15.5 3 3 0 0 0 5.5 18c1.9.3 4 .5 6.5.5s4.6-.2 6.5-.5a3 3 0 0 0 2.5-2.5 20 20 0 0 0 .3-3.5 20 20 0 0 0-.3-3.5Z"/><path d="m10 9 5 3-5 3Z"/></symbol>
+  </svg>
+
+  <div class="utility-bar">
+    <div class="shell utility-inner">
+      <p><svg class="icon"><use href="#i-leaf"></use></svg> Good energy for your home, your business and our planet.</p>
+      <div class="utility-actions">
+        <a href="tel:+440000000000"><svg class="icon"><use href="#i-phone"></use></svg> 0800 123 456</a>
+        <a href="#quote"><svg class="icon"><use href="#i-arrow"></use></svg> Request a consultation</a>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="shell header-inner">
+      <a class="brand" href="#home" aria-label="Solarshop home">
+        <img src="assets/solarshop-logo-transparent.png" alt="Solarshop" />
+      </a>
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a class="nav-pill active" href="#home">Home</a>
+        <a class="nav-pill" href="#solutions">Our solar solutions</a>
+        <a class="nav-pill" href="#why-us">Why Solarshop</a>
+        <a class="nav-pill" href="#process">How it works</a>
+        <a class="nav-pill" href="#projects">Projects</a>
+        <a class="nav-pill" href="#faq">Advice</a>
+      </nav>
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+440000000000"><svg class="icon"><use href="#i-phone"></use></svg><span>Talk to us</span></a>
+        <a class="button button-primary button-small" href="#quote">Get a quote <svg class="icon"><use href="#i-arrow"></use></svg></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu"><span></span><span></span></button>
+      </div>
+    </div>
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+      <a href="#home">Home</a>
+      <a href="#solutions">Our solar solutions</a>
+      <a href="#why-us">Why Solarshop</a>
+      <a href="#process">How it works</a>
+      <a href="#projects">Projects</a>
+      <a href="#faq">Advice</a>
+      <a class="button button-primary" href="#quote">Get a quote</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide active" style="background-image:url('assets/hero-slide-1.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('assets/hero-slide-2.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('assets/hero-slide-3.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1782297040435-349d43efbf98?auto=format&fit=crop&fm=jpg&q=82&w=2200')"></div>
+        <div class="hero-slide" style="background-image:url('https://images.unsplash.com/photo-1775686332316-8e1ce04d10d7?auto=format&fit=crop&fm=jpg&q=82&w=2200')"></div>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow light"><span class="eyebrow-dot"></span> Clean energy. Brighter tomorrow.</p>
+          <h1 id="hero-title">Make more of the energy <em>above you.</em></h1>
+          <p class="hero-lead">Beautifully considered solar, battery storage and EV-ready energy systems for homes and businesses — designed to feel clear, calm and trustworthy from the very first hello.</p>
+          <div class="hero-actions">
+            <a class="button button-sun button-large" href="#quote">Start your solar plan <svg class="icon"><use href="#i-arrow"></use></svg></a>
+            <a class="button button-ghost button-large" href="#solutions">Explore solutions</a>
+          </div>
+          <div class="hero-benefits" aria-label="Key benefits">
+            <div><span class="icon-badge green"><svg class="icon"><use href="#i-leaf"></use></svg></span><b>Lower energy bills</b></div>
+            <div><span class="icon-badge yellow"><svg class="icon"><use href="#i-sun"></use></svg></span><b>Clean renewable energy</b></div>
+            <div><span class="icon-badge blue"><svg class="icon"><use href="#i-shield"></use></svg></span><b>Quality-led installation</b></div>
+            <div><span class="icon-badge pale"><svg class="icon"><use href="#i-people"></use></svg></span><b>Long-term support</b></div>
+          </div>
+        </div>
+
+        <aside class="hero-card reveal delay-2" aria-label="Live estimate snapshot">
+          <div class="hero-card-head">
+            <div class="hero-card-brand">
+              <img src="assets/solarshop-logo-transparent.png" alt="Solarshop" />
+              <span>Illustrative home system</span>
+            </div>
+            <span class="live-pill"><span class="live-pulse"></span> Live estimate</span>
+          </div>
+          <div class="hero-card-sunwrap">
+            <div class="hero-card-orbit"></div>
+            <div class="hero-card-orbit hero-card-orbit-2"></div>
+            <div class="hero-card-sun">
+              <svg class="icon"><use href="#i-sun"></use></svg>
+              <span class="sun-rays"></span>
+            </div>
+          </div>
+          <div class="hero-card-value">
+            <small>Potential annual saving</small>
+            <strong>£1,240<span>*</span></strong>
+          </div>
+          <div class="mini-bars" aria-hidden="true">
+            <span data-base="34"></span><span data-base="47"></span><span data-base="58"></span><span data-base="76"></span><span data-base="69"></span><span data-base="88"></span><span data-base="94"></span><span data-base="79"></span><span data-base="64"></span><span data-base="51"></span><span data-base="39"></span><span data-base="29"></span>
+          </div>
+          <p>*Illustrative estimate only. Actual savings depend on your property, energy use and system design.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="benefit-strip" aria-label="Solarshop benefits">
+      <div class="shell benefit-grid">
+        <article><span class="benefit-icon green"><svg class="icon"><use href="#i-sun"></use></svg></span><div><b>More from the sunshine</b><p>Generate clean energy where you use it.</p></div></article>
+        <article><span class="benefit-icon yellow"><svg class="icon"><use href="#i-leaf"></use></svg></span><div><b>Less impact on our planet</b><p>Reduce dependence on grid energy.</p></div></article>
+        <article><span class="benefit-icon blue"><svg class="icon"><use href="#i-chart"></use></svg></span><div><b>More control of your energy</b><p>Understand generation, storage and use.</p></div></article>
+        <article><span class="benefit-icon pale"><svg class="icon"><use href="#i-people"></use></svg></span><div><b>Real people. Honest advice.</b><p>Clear guidance without the hard sell.</p></div></article>
+      </div>
+    </section>
+
+    <section class="section intro-section">
+      <div class="shell intro-grid">
+        <div class="intro-content reveal">
+          <p class="eyebrow dark"><span class="eyebrow-dot"></span> A brighter start</p>
+          <h2>A little solar. A world of possibilities.</h2>
+          <p>From your first questions to the final installation, we make solar feel simple. Our team helps you understand the options, choose the right system and get more from the energy your property can produce.</p>
+          <ul class="intro-points">
+            <li><svg class="icon"><use href="#i-shield"></use></svg> Tailored solar system design</li>
+            <li><svg class="icon"><use href="#i-leaf"></use></svg> Quality solar and storage technology</li>
+            <li><svg class="icon"><use href="#i-people"></use></svg> Friendly guidance from real experts</li>
+          </ul>
+          <a class="inline-link" href="#solutions">Discover our solutions <svg class="icon"><use href="#i-arrow"></use></svg></a>
+        </div>
+        <figure class="intro-media reveal delay-2">
+          <img src="assets/intro-image.jpg" alt="Bright contemporary home with solar panels in natural daylight" />
+          <figcaption><span class="benefit-icon yellow"><svg class="icon"><use href="#i-sun"></use></svg></span><div><b>Designed around the way you use energy.</b><p>Practical advice, carefully selected technology and a system that fits your property.</p></div></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section solutions" id="solutions">
+      <div class="shell">
+        <div class="heading-row reveal">
+          <div>
+            <p class="eyebrow dark"><span class="eyebrow-dot"></span> Our solar solutions</p>
+            <h2>Smart solutions for every space.</h2>
+          </div>
+          <p>Choose a complete energy system or start with the solution you need today. Solarshop brings home solar, battery storage, EV charging and commercial solar together in one clear offering.</p>
+        </div>
+
+        <div class="solution-grid">
+          <article class="solution-card card-green reveal">
+            <div class="solution-image">
+              <img src="assets/card-home.jpg" alt="Modern home with rooftop solar panels in natural daylight" />
+              <span class="card-icon green on-image"><svg class="icon"><use href="#i-house"></use></svg></span>
+            </div>
+            <div class="solution-body">
+              <p class="card-kicker">Residential solar</p>
+              <h3>Solar for your home</h3>
+              <p>Thoughtful rooftop systems designed to lower bills, improve energy independence and sit beautifully on your property.</p>
+              <a class="inline-link" href="#quote">Explore solution <svg class="icon"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </article>
+
+          <article class="solution-card card-cream reveal delay-1">
+            <div class="solution-image">
+              <img src="assets/card-battery.jpg" alt="Home battery installed in a calm, modern interior" />
+              <span class="card-icon yellow on-image"><svg class="icon"><use href="#i-battery"></use></svg></span>
+            </div>
+            <div class="solution-body">
+              <p class="card-kicker">Battery storage</p>
+              <h3>Keep the sunshine</h3>
+              <p>Store more of the energy you generate and use it later when it matters most.</p>
+              <a class="inline-link" href="#quote">Explore solution <svg class="icon"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </article>
+
+          <article class="solution-card card-blue reveal delay-2">
+            <div class="solution-image">
+              <img src="https://images.unsplash.com/photo-1775259928422-779c18e32007?auto=format&fit=crop&fm=jpg&q=82&w=1400" alt="Electric car charging at a modern home with solar panels in natural daylight" />
+              <span class="card-icon blue on-image"><svg class="icon"><use href="#i-car"></use></svg></span>
+            </div>
+            <div class="solution-body">
+              <p class="card-kicker">EV charging</p>
+              <h3>Charge with your own energy</h3>
+              <p>Connect home charging with solar generation for a cleaner, more useful daily routine.</p>
+              <a class="inline-link" href="#quote">Explore solution <svg class="icon"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </article>
+
+          <article class="solution-card card-deep reveal delay-3">
+            <div class="solution-image">
+              <img src="assets/card-business.jpg" alt="Commercial building with solar on the roof in daylight" />
+              <span class="card-icon pale on-image"><svg class="icon"><use href="#i-building"></use></svg></span>
+            </div>
+            <div class="solution-body">
+              <p class="card-kicker">Commercial solar</p>
+              <h3>Turn roof space into an asset</h3>
+              <p>Scalable systems for businesses looking to reduce overheads and support sustainability goals.</p>
+              <a class="inline-link" href="#quote">Explore solution <svg class="icon"><use href="#i-arrow"></use></svg></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-section" id="why-us">
+      <div class="shell why-grid">
+        <div class="why-image reveal">
+          <img src="assets/why-image.jpg" alt="Solar installation in natural daylight" />
+          <div class="why-badge"><svg class="icon"><use href="#i-shield"></use></svg><span>Trusted, local and quality-led</span></div>
+        </div>
+        <div class="why-copy reveal delay-2">
+          <p class="eyebrow dark"><span class="eyebrow-dot"></span> Why Solarshop</p>
+          <h2>Better energy. Without the complications.</h2>
+          <p>We believe switching to cleaner energy should feel straightforward. From system design and product selection to installation and aftercare, our approach is built around clear advice and dependable support.</p>
+          <div class="why-points">
+            <article><span class="point-icon green"><svg class="icon"><use href="#i-shield"></use></svg></span><div><b>Thoughtfully engineered</b><p>Systems tailored to the property and the people using them.</p></div></article>
+            <article><span class="point-icon yellow"><svg class="icon"><use href="#i-tools"></use></svg></span><div><b>Expert installation</b><p>Professional delivery backed by careful planning and support.</p></div></article>
+            <article><span class="point-icon blue"><svg class="icon"><use href="#i-people"></use></svg></span><div><b>People-first service</b><p>Helpful advice, clear communication and straightforward guidance.</p></div></article>
+            <article><span class="point-icon pale"><svg class="icon"><use href="#i-chart"></use></svg></span><div><b>Long-term confidence</b><p>Understand generation, savings, storage and future flexibility.</p></div></article>
+          </div>
+          <a class="button button-outline" href="#quote">Talk to Solarshop <svg class="icon"><use href="#i-arrow"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="Solarshop service values">
+      <div class="shell stats-grid">
+        <article class="value-green"><div class="value-title"><span class="value-icon"><svg class="icon"><use href="#i-house"></use></svg></span><strong>Tailored</strong></div><span>Designed around your property</span></article>
+        <article class="value-leaf"><div class="value-title"><span class="value-icon"><svg class="icon"><use href="#i-shield"></use></svg></span><strong>Expert</strong></div><span>Guidance from survey to installation</span></article>
+        <article class="value-yellow"><div class="value-title"><span class="value-icon"><svg class="icon"><use href="#i-star"></use></svg></span><strong>Clear</strong></div><span>Straightforward advice throughout</span></article>
+        <article class="value-blue"><div class="value-title"><span class="value-icon"><svg class="icon"><use href="#i-phone"></use></svg></span><strong>Responsive</strong></div><span>Support when you need it</span></article>
+      </div>
+    </section>
+
+    <section class="section process" id="process">
+      <div class="shell">
+        <div class="heading-row reveal">
+          <div>
+            <p class="eyebrow dark"><span class="eyebrow-dot"></span> From first hello to clean energy</p>
+            <h2>A simple path to solar.</h2>
+          </div>
+          <p>From the first conversation to switch-on, we keep every step clear. You’ll know what happens next, what your system includes and who to speak to along the way.</p>
+        </div>
+
+        <div class="process-grid" id="process-grid">
+          <div class="process-progress" aria-hidden="true"></div>
+          <article class="process-card tone-green reveal"><div class="process-top"><span class="step-badge">01</span><span class="process-icon"><svg class="icon"><use href="#i-chat"></use></svg></span></div><h3>Let’s talk</h3><p>Tell us about your property, goals and current energy needs.</p></article>
+          <article class="process-card tone-cream reveal delay-1"><div class="process-top"><span class="step-badge">02</span><span class="process-icon"><svg class="icon"><use href="#i-search"></use></svg></span></div><h3>Site assessment</h3><p>We review the space, usage and the most suitable options.</p></article>
+          <article class="process-card tone-yellow reveal delay-2"><div class="process-top"><span class="step-badge">03</span><span class="process-icon"><svg class="icon"><use href="#i-file"></use></svg></span></div><h3>Custom proposal</h3><p>Receive a clear, tailored recommendation with transparent next steps.</p></article>
+          <article class="process-card tone-blue reveal delay-3"><div class="process-top"><span class="step-badge">04</span><span class="process-icon"><svg class="icon"><use href="#i-tools"></use></svg></span></div><h3>Professional installation</h3><p>Our experienced team handles delivery with care and precision.</p></article>
+          <article class="process-card tone-deep reveal delay-3"><div class="process-top"><span class="step-badge">05</span><span class="process-icon"><svg class="icon"><use href="#i-bolt"></use></svg></span></div><h3>Enjoy the benefits</h3><p>Start using cleaner energy with more confidence and control.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quick-estimate">
+      <div class="shell quick-estimate-box reveal">
+        <div>
+          <p class="eyebrow dark"><span class="eyebrow-dot"></span> A simple first step</p>
+          <h2>Start with your postcode.</h2>
+          <p>Tell us where the property is and we’ll help shape the right conversation.</p>
+        </div>
+        <form class="quick-form" id="quick-form">
+          <label for="quick-postcode">Postcode</label>
+          <div class="quick-row">
+            <input id="quick-postcode" name="postcode" type="text" placeholder="e.g. SW1A 1AA" required>
+            <button class="button button-primary" type="submit">Get an estimate <svg class="icon"><use href="#i-arrow"></use></svg></button>
+          </div>
+          <p class="quick-status" id="quick-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="shell projects-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow dark"><span class="eyebrow-dot"></span> Featured project</p>
+          <h2>Real results for real spaces.</h2>
+        </div>
+        <p class="project-intro reveal delay-1">See how a well-designed solar system can lower energy use from the grid, support long-term savings and fit naturally into the property around it.</p>
+        <article class="featured-project reveal delay-2">
+          <div class="project-image"><img src="assets/featured-project.jpg" alt="Commercial solar building project in daylight" /></div>
+          <div class="project-copy">
+            <p class="card-kicker">Illustrative case study</p>
+            <h3>A brighter, more efficient home.</h3>
+            <p>This tailored solar system was designed to reduce grid reliance, improve long-term efficiency and complement the property without compromising its appearance.</p>
+            <div class="project-metrics"><div><strong data-count="6.5" data-decimals="1">0</strong><span>System size kW</span></div><div><strong data-count="30" data-suffix="%">0</strong><span>Estimated annual savings</span></div><div><strong data-count="4.2" data-decimals="1" data-suffix="t">0</strong><span>CO₂ reduced each year</span></div></div>
+            <p class="project-note">Illustrative figures shown for concept presentation; final project data should use verified Solarshop results.</p>
+            <a class="inline-link" href="#quote">Discuss a similar project <svg class="icon"><use href="#i-arrow"></use></svg></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section testimonial-section">
+      <div class="shell testimonial-grid">
+        <div class="testimonial-image reveal"><img src="assets/testimonial-home.jpg" alt="Premium residential property at golden hour" /></div>
+        <article class="testimonial-card reveal delay-2">
+          <p class="card-kicker">Example homeowner feedback</p>
+          <div class="stars" aria-label="5 star review"><svg class="icon"><use href="#i-star"></use></svg><svg class="icon"><use href="#i-star"></use></svg><svg class="icon"><use href="#i-star"></use></svg><svg class="icon"><use href="#i-star"></use></svg><svg class="icon"><use href="#i-star"></use></svg></div>
+          <blockquote>“The whole process felt considered and easy. The design was tidy, the installation was tidy, and we finally understand how our home uses energy.”</blockquote>
+          <div class="testimonial-meta"><span class="avatar">SM</span><div><b>Sarah &amp; Matt</b><small>Homeowners · sample testimonial</small></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="shell faq-grid">
+        <div class="faq-intro reveal">
+          <p class="eyebrow dark"><span class="eyebrow-dot"></span> A little clarity</p>
+          <h2>Good questions. Honest answers.</h2>
+          <p>Solar can raise a lot of questions. Here are straightforward answers to some of the things homeowners and businesses ask us most often.</p>
+          <a class="inline-link" href="#quote">Ask us anything <svg class="icon"><use href="#i-arrow"></use></svg></a>
+        </div>
+        <div class="faq-list reveal delay-2">
+          <article class="faq-item open"><button type="button" aria-expanded="true"><span>Do solar panels work on cloudy days?</span><svg class="icon"><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>Yes. Solar panels still generate electricity in diffuse daylight, though output varies with weather, orientation, season and system design.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>Is my property suitable for solar?</span><svg class="icon"><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>Roof area, shading, orientation, structural condition and energy use all matter. A site assessment helps determine what makes the most sense.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>Should I add battery storage?</span><svg class="icon"><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>A battery can help you use more of the energy you generate. Whether it is worthwhile depends on your usage profile, tariffs and future plans.</p></div></article>
+          <article class="faq-item"><button type="button" aria-expanded="false"><span>How long does installation take?</span><svg class="icon"><use href="#i-chevron"></use></svg></button><div class="faq-answer"><p>Timescales vary by property and system size, but a clear proposal should set out the expected process before installation starts.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-banner">
+      <div class="shell cta-banner-inner reveal">
+        <div>
+          <p class="eyebrow light"><span class="eyebrow-dot"></span> A brighter next step</p>
+          <h2>Your next chapter starts with a little sunshine.</h2>
+          <p>Talk to our team and find the right solar, battery or EV solution for your property.</p>
+        </div>
+        <a class="button button-sun" href="#quote">Let’s talk solar <svg class="icon"><use href="#i-arrow"></use></svg></a>
+      </div>
+    </section>
+
+    <section class="quote-section" id="quote">
+      <div class="shell quote-grid">
+        <div class="quote-copy reveal">
+          <p class="eyebrow light"><span class="eyebrow-dot"></span> Start your solar journey</p>
+          <h2>Tell us where you want your energy to go next.</h2>
+          <p>Tell us a little about your property and what you want to achieve. Our team can then recommend the right next step for your energy needs.</p>
+          <div class="quote-contact">
+            <a href="tel:+440000000000"><svg class="icon"><use href="#i-phone"></use></svg> 0800 123 456</a>
+            <a href="mailto:hello@solarshop.co.uk"><svg class="icon"><use href="#i-mail"></use></svg> hello@solarshop.co.uk</a>
+            <p><svg class="icon"><use href="#i-pin"></use></svg> Serving homes &amp; businesses nationwide</p>
+            <a href="https://wa.me/440000000000"><svg class="icon"><use href="#i-whatsapp"></use></svg> Message us on WhatsApp</a>
+          </div>
+        </div>
+
+        <form class="quote-form reveal delay-2" id="quote-form" novalidate>
+          <div class="field-grid">
+            <label><span>Name</span><input type="text" name="name" placeholder="Your name" required></label>
+            <label><span>Email</span><input type="email" name="email" placeholder="you@example.com" required></label>
+            <label><span>Phone</span><input type="tel" name="phone" placeholder="Phone number"></label>
+            <label><span>Postcode</span><input type="text" name="postcode" placeholder="Postcode"></label>
+          </div>
+          <label><span>Interested in</span><select name="interest"><option>Choose an option</option><option>Residential solar</option><option>Battery storage</option><option>EV charging</option><option>Commercial solar</option></select></label>
+          <label><span>Tell us a little more</span><textarea name="message" rows="5" placeholder="The type of property, roof size or any goals you already have in mind."></textarea></label>
+          <label class="consent"><input type="checkbox" required><span>I am happy for Solarshop to respond to this enquiry.</span></label>
+          <p class="privacy-note"><svg class="icon"><use href="#i-shield"></use></svg> We’ll only use your details to respond to this enquiry.</p>
+          <button class="button button-sun button-full" type="submit">Request my solar consultation <svg class="icon"><use href="#i-arrow"></use></svg></button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo-wrap"><img src="assets/solarshop-logo-transparent.png" alt="Solarshop" /></div>
+        <p>A little sunshine. A lot of possibility. Solar, storage and smart energy solutions for homes and businesses.</p>
+        <div class="social-links" aria-label="Social media">
+          <a href="#" aria-label="Facebook"><svg class="icon"><use href="#i-facebook"></use></svg></a>
+          <a href="#" aria-label="Instagram"><svg class="icon"><use href="#i-instagram"></use></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg class="icon"><use href="#i-linkedin"></use></svg></a>
+          <a href="#" aria-label="YouTube"><svg class="icon"><use href="#i-youtube"></use></svg></a>
+        </div>
+      </div>
+      <div class="footer-links"><h3>Explore</h3><a href="#home">Home</a><a href="#solutions">Our solar solutions</a><a href="#why-us">Why Solarshop</a><a href="#projects">Projects</a></div>
+      <div class="footer-links"><h3>Your next step</h3><a href="#process">How it works</a><a href="#faq">Advice</a><a href="#quote">Request a proposal</a><a href="#quote">Get a quote</a></div>
+      <div class="footer-cta"><p>Ready to make your roof work harder?</p><a class="button button-sun" href="#quote">Get a quote <svg class="icon"><use href="#i-arrow"></use></svg></a></div>
+    </div>
+    <div class="shell footer-bottom"><span>© <span id="year"></span> Solarshop. All rights reserved.</span><span>Privacy · Cookies · Terms</span></div>
+  </footer>
+
+  <div class="contact-widget" id="contact-widget">
+    <button class="contact-widget-toggle" type="button" aria-expanded="false" aria-controls="contact-widget-panel"><svg class="icon"><use href="#i-chat"></use></svg><span>Chat with us</span></button>
+    <div class="contact-widget-panel" id="contact-widget-panel" aria-hidden="true">
+      <div class="contact-widget-head"><div><b>How can we help?</b><small>Choose the quickest way to reach us.</small></div><button type="button" class="contact-widget-close" aria-label="Close contact options">×</button></div>
+      <a href="https://wa.me/440000000000"><span class="benefit-icon green"><svg class="icon"><use href="#i-whatsapp"></use></svg></span><span><b>WhatsApp</b><small>Send a direct message</small></span></a>
+      <a href="tel:+440000000000"><span class="benefit-icon yellow"><svg class="icon"><use href="#i-phone"></use></svg></span><span><b>Call us</b><small>Speak to the team</small></span></a>
+      <a href="#quote"><span class="benefit-icon blue"><svg class="icon"><use href="#i-file"></use></svg></span><span><b>Send an enquiry</b><small>Use the consultation form</small></span></a>
+    </div>
+  </div>
+
+  <div class="mobile-action-bar" aria-label="Quick actions">
+    <a href="tel:+440000000000"><svg class="icon"><use href="#i-phone"></use></svg> Call us</a>
+    <a href="#quote"><svg class="icon"><use href="#i-arrow"></use></svg> Get a quote</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
